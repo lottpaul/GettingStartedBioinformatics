@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "../Projects/ucdavisquestionnaire_8_2019"
+		},
+		{
+			"path": "../Carcinos/share/carvajal-archive/PACKAGES/webui/django2_lcc_rest"
+		},
+		{
+			"path": "../Carcinos/share/carvajal-archive/PACKAGES/webui/django_lcc_database"
+		},
+		{
+			"path": "../Projects/ExomeProjects"
+		},
+		{
+			"path": "../Carcinos/share/carvajal-archive/SEQ_DATA/EXOMES/PaulTest"
+		},
+		{
+			"path": "../Carcinos/share/carvajal-archive/PACKAGES/common-repositories/cwl_pipelines"
+		}
+	],
+	"settings": {
+		"editor.fontSize": 9,
+		"window.zoomLevel": 1
+	},
+	"files.associations": {
+		"*.snakemake": "snakemake"
+	}
+}
