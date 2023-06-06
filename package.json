@@ -2,7 +2,7 @@
   "name": "@jupyterlite/app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/jupyterlite/jupyterlite",
+  "homepage": "https://lottpaul.github.io/GettingStartedBioinformatics/lab",
   "bugs": {
     "url": "https://github.com/jupyterlite/jupyterlite/issues"
   },
