@@ -12,7 +12,7 @@ Instead of utilizing the OS copy function, whether in GUI or commandline, you sh
 
 | Option | Description |
 | ------ | ----------- |
-| -a     | Arcive Mode - recursively transfer files/folders; copies symlinks as symlinks; preserve permissions; preserve modification times; preserve ownder, preserve group | 
+| -a     | Arcive Mode - recursively transfer files/folders; copies symlinks as symlinks; preserve permissions; preserve modification times; preserve owner, preserve group | 
 | -v     | Verbose Mode |
 | -h     | Human readable output |
 | --progress | Show transfer progress |
@@ -22,7 +22,7 @@ For additional options, please consult the manpages: `man rsync`
 ### Transferring Files to a new partition or folder
 To transfer a file/folder to a local folder, `rsync` doesn't need to use SSH connection.
 
-**Usage:** `rsync -avh --progress <File/Folder> <Local Folder>
+**Usage:** `rsync -avh --progress [File/Folder] [Local Folder]
 
 ### Transfers to Remote Server
 To transfer a file `test.txt` to a remote server via SSH the `user` could provide their login name, server URL, and destination directory.
