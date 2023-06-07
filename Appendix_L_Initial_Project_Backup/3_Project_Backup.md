@@ -9,13 +9,12 @@ Once you've transferred the files and verified the file integrity. You should ba
 
 Within the LCC Lab, I always keep a copy on the Server, a copy on a Backup Drive, and a copy on AWS Glacier Long-term Tape storage. 
 
-To ensure that the data is stored efficiently, I always like to gzipped-Tarball the files.
+To ensure that the data is stored efficiently, I always like to keep a project folder(s) in a gzipped-Tarball.
 
 ## Tar (Tape Archive Format)
 Tar is a software program the combines files into a single archive. It was originally developed to backup and store information to tape-based backup systems and is present on Unix/Linux based systems.
 
 Today, Tar has become a standard for combining files and directories.  An alternative that is common to see is ZIP files.
-
 
 ### Common options
 
@@ -26,20 +25,30 @@ Today, Tar has become a standard for combining files and directories.  An altern
 | -v      | Print versose information |
 | -z      | Create Tar file using gzip compression |
 | -t      | List all files in the tar archive file |
-| -W      | Verify an archive file |
 | -u      | Archives file and adds it to existing file |
 | -r      | Updates a file or directory located inside a tar archive |
 
 ### Archiving
+Archiving files/folders to a single gzipped tarball file can be performed by using the `zcvf` options.  Providing the output name `[archive file].tar.gz`.  You can provide multiple files or a directory to add archive.
 
 **Usage:**`tar zcvf [archive file].tar.gz  [files/directories]`
 
 **Example:** `tar zcvf test.tar.gz test_directory`
 
 ### Extracting
+To extract a gzipped-tarball, you should use the options `zxvf`. Note: if the tar archive is not gzipped, you can simply use the `xvf`.
 
 **Usage:**`tar zxvf [archive file].tar.gz`
 
 **Example:** `tar zxvf test.tar.gz`
+
+This will extract all the files and folders in the Tarball to the current directory you are working in.
+
+### Listing Archive Files
+To list the files in the tarball archive
+
+**Usage:** `tar tvf [archive file].tar.gz`
+
+**Example:** `tar tvf test.tar.gz`
 
 
