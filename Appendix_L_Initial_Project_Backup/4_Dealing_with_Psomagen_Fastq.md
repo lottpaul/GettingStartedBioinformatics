@@ -48,6 +48,8 @@ AN2/FD3/FD3_2.fastq.gz
 
 2. In a text editor, replace the newline character `\n`, with the following:
 
+Make certain that the replace string ends with a space
+
 ```
 \npython /share/carvajal-archive/PACKAGES/common-repositories/python/scripts/dna_seq/ValidateFastqReadGroups.py --output_directory RG_Checked -fastq 
 ```
