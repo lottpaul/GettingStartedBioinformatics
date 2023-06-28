@@ -1,7 +1,0 @@
-# Introduction to Basic GATK WES Pipeline
-
-```mermaid
-sequenceDiagram
-  Alice ->> John
-  John ->> Alice
-```
